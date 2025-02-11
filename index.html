@@ -10,23 +10,23 @@
 <body>
     <header aria-label="header">
         <section class="navbar_left" aria-label="navbar_left">
-         <div class="navbar_logo" aria-label="navbar_logo" tabindex="0" title="Flipkart">
+         <div class="navbar_logo" aria-label="navbar_logo"  title="Flipkart">
            <img src="./assets/flipkart_text.svg" alt="flipkart_text">
            <img src="./assets/plus_text.svg" alt="plus_text">
          </div>
-         <div class="navbar_search">
-                <input type="text" placeholder="Search for products, brands and more" title="Search for products, brands and more">
-                <img src="./assets/search.svg" alt="search_icon" title="search">
+         <div class="navbar_search" tabindex="0">
+                <input type="text" placeholder="Search for products, brands and more" title="Search for products, brands and more" aria-label="Search for products, brands and more">
+                <img src="./assets/search.svg" alt="search_icon" title="search" role="button">
          </div>
         </section>
         <section class="navbar_right" aria-label="navbar_right">
           <button title="Login">Login</button>
           <div class="navbar_more" tabindex="0" title="more" aria-label="more">
               <p>More</p>
-              <img src="./assets/arrowdown.svg" alt="more">
+              <img src="./assets/arrowdown.svg" alt="more" role="button">
           </div>
           <div class="navbar_cart" tabindex="0" aria-label="navbar_cart" title="cart">
-             <img src="./assets/cart.svg" alt="cart" >
+             <img src="./assets/cart.svg" alt="cart" role="button">
              <p>Cart</p>
           </div>
         </section>
