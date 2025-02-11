@@ -13,7 +13,7 @@ body{
 header{
     height: 3.5rem;
     width: 100%;
-    gap: 1.5rem;
+   
     background-color:#2874F0;
     display: flex;
     flex-direction: row;
@@ -116,7 +116,43 @@ gap: 1.875rem;
     font-weight: 700;
 }
 @media (max-width:770px){
+    .navbar_search img{
+        display: none;
+    }
+    .navbar_search{
+        margin-right: 30px;
+    }
+    .navbar_right{
+        gap:5px;
+         padding-right:5px;
+    }
+    
+}
+@media (max-width:400px){
+   
+    .navbar_more,.navbar_cart{
+        display: none;
+    }
+    .navbar_left{
+        display: flex;
+        justify-content: center;
+        padding-left: 5px;
+
+    }
+
+}
+@media (max-width:388px){
     .navbar_search{
         display: none;
+    }
+}
+@media (max-width:164px){
+    header{
+        flex-direction: column;
+        height: fit-content;
+        
+        align-items: center;
+        
+        padding: 5px;
     }
 }
