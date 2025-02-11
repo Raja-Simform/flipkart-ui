@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+    /* border: 1px solid red */
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+header{
+    height: 3.5rem;
+    width: 100vw;
+    gap: 3.125rem;
+    background-color:#2874F0;
+    display: flex;
+    
+}
+.navbar_left{    
+width: 55%;
+height: 100%;
+display: flex;
+justify-content: end;
+align-items: center;
+gap: 30px;
+}
+.navbar_logo{
+    height: 100%;
+    width: 4.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+.navbar_search{
+    width: 564px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.navbar_search input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: white;
+    font-size: 16px;
+}
+.navbar_search img{
+    position: absolute;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.navbar_right{
+width: 45%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+.navbar_right > button{
+    height: 32px;
+    width: 122px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #2874F0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.navbar_right > button:hover{
+    background-color:rgb(190, 181, 181) ;
+}
+.navbar_more{
+    height: 32px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.navbar_more p{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.navbar_more img{
+    height: 10px;
+    width: 10px;
+}
+.navbar_cart{
+    height: 32px;
+    width: 70px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.navbar_cart p{
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 700;
+}
+@media (max-width:770px){
+    .navbar_search{
+        display: none;
+    }
+}
