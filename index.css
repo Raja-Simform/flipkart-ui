@@ -5,6 +5,9 @@
     font-family:Arial, Helvetica, sans-serif
     /* border: 1px solid red */
 }
+:root{
+    --navbar-background:#2874F0;
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     height: 100vh;
@@ -14,7 +17,7 @@ header{
     height: 3.5rem;
     width: 100%;
    
-    background-color:#2874F0;
+    background-color:var(--navbar-background);
     display: flex;
     flex-direction: row;
     
@@ -34,7 +37,7 @@ gap: 1.875rem;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-   
+    margin-left: 10px;
 }
 .navbar_search{
     width: 564px;
@@ -115,30 +118,31 @@ gap: 1.875rem;
     font-size: 1rem;
     font-weight: 700;
 }
-@media (max-width:770px){
+@media (max-width:790px){
     .navbar_search img{
         display: none;
     }
-    .navbar_search{
-        margin-right: 1.875rem;
-    }
+
     .navbar_right{
-        gap:0.3125rem;
-         padding-right:5px;
+       
+        padding-right:5px;
     }
-    
-}
-@media (max-width:400px){
-   
     .navbar_more,.navbar_cart{
         display: none;
     }
+    
+}
+
+@media (max-width:500px){
+   
+  
     .navbar_left{
         display: flex;
         justify-content: center;
         padding-left: 5px;
 
     }
+  
 
 }
 @media (max-width:388px){
