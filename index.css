@@ -7,6 +7,8 @@
 }
 :root{
     --navbar-background:#2874F0;
+    --backgorund-white:white;
+    --backgound-grey:rgb(190, 181, 181) ;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
@@ -54,7 +56,7 @@ gap: 1.875rem;
     border: none;
     border-radius: 0.125rem;
     padding: 0.9375rem;
-    background-color: white;
+    background-color:var(--backgorund-white);
     font-size: 1rem;
 }
 .navbar_search img{
@@ -78,13 +80,13 @@ gap: 1.875rem;
     border-radius: 0.125rem;
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--backgorund-white);
     color: #2874F0;
     font-size: 1rem;
     font-weight: 700;
 }
 .navbar_right > button:hover{
-    background-color:rgb(190, 181, 181) ;
+    background-color:var(--backgound-grey)
 }
 .navbar_more{
     height: 2rem;
@@ -96,7 +98,7 @@ gap: 1.875rem;
     cursor: pointer;
 }
 .navbar_more p{
-    color: white;
+    color: var(--backgorund-white);
     font-size: 1rem;
     font-weight: 700;
 }
@@ -114,7 +116,7 @@ gap: 1.875rem;
     cursor: pointer;
 }
 .navbar_cart p{
-    color: aliceblue;
+    color: var(--backgorund-white);
     font-size: 1rem;
     font-weight: 700;
 }
@@ -133,7 +135,7 @@ gap: 1.875rem;
     
 }
 
-@media (max-width:500px){
+@media (max-width:580px){
    
   
     .navbar_left{
@@ -142,21 +144,18 @@ gap: 1.875rem;
         padding-left: 5px;
 
     }
-  
-
-}
-@media (max-width:388px){
     .navbar_search{
         display: none;
     }
+  
+
 }
+
 @media (max-width:164px){
     header{
         flex-direction: column;
         height: fit-content;
-        
         align-items: center;
-        
         padding: 5px;
     }
 }
