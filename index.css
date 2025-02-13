@@ -4,12 +4,15 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   
+  
 }
 :root {
   --navbar-background: #2874f0;
   --backgorund-white: white;
-  --backgound-grey: rgb(190, 181, 181);
+  --backgound-grey: rgb(153, 153, 153);
+  --background-light-grey:rgb(241, 241, 241);
   --text-balck: black;
+  --text-green:green;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
@@ -26,7 +29,7 @@ header {
   align-items: center;
 }
 main{
-  background-color: var(--backgound-grey);
+  background-color: var(--background-light-grey);
   height: calc(100vh - 3.5rem);
 }
 .navbar_left {
@@ -147,22 +150,21 @@ main{
   padding: 5px;
 }
 .Deals_of_the_day{
-  background-color: var(--backgorund-white);
-  height: 25rem;
-  width: 100%;
+  background-color: var(--background-light-grey);
+  height: 28rem;
+  width: 100vw;
   display: flex;
-  background:var(--backgound-grey);
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
 .deal{
   height:90%;
-  width: 77%;
+  width: 70rem;
   display: flex;
   flex-direction: column;
   background-color: var(--backgorund-white);
-  
+  overflow: hidden;
 }
 .title{
   height: 4rem;
@@ -171,8 +173,24 @@ main{
   justify-content: space-between;
   padding: 0px 20px;
   align-items: center;  
-  border-bottom: 0.5px solid var(--text-balck);
+  border-bottom: 0.5px solid var(--background-light-grey);
 }
+.title a{
+  height: 2rem;
+  width: 6rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbar-background);
+  color: var(--backgorund-white);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.title a:hover{
+  background-color: var(--backgound-grey);
+}
+
 .left_title{
   display: flex;
   gap: 1rem;
@@ -195,25 +213,91 @@ main{
 .timer p{
   font-weight: 500;
   font-size: 0.9em;
-  color: var(--backgound-grey);
+  color: var();
 }
 .timer img{
   height: 1rem;
   width: 1rem;
 }
+.products{
+  height: 18.4rem;
+  width: 100%;
+  display: flex;
+  
+  position: relative;
+
+}
+.products a{
+  height: 100%;
+  width:14rem; 
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.products a img{
+  height: 12rem;
+  width: 10rem;
+}
+.products a p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#first-line{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-balck);
+  text-align: center;
+}
+#second-line{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-green);
+  text-align: center;
+}
+#third-line{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--backgound-grey);
+  text-align: center;
+}
 
 #deals_of_the_day_offer{
   height: 90%;
-  width: 13%;
+  width: 15rem;
   background-color: var(--backgorund-white);
 }
 #deals_of_the_day_offer img{
   height: 99.5%;
-  width: 100%;
+  width: 15rem;
   
 }
+#more_arrow{
+  margin-top: 3rem;
+  height: 5rem;
+  width: 2.5rem;
+  position: absolute;
+  right:0px;
+  top: 20%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgorund-white);
+  box-shadow: 2px 2px 12px 4px #dfdfdf;
+  border-radius: 4px;
+}
+#more_arrow img{
+   height: 2rem;
+   width: 2rem;
+}
+#more_arrow:hover{
+  box-shadow: 2px 2px 12px 6px #c7c6c6;
+}
 
-@media (max-width: 1232px) {
+@media (max-width: 1277px) {
   .navbar_left {
     width: 65%;
   }
@@ -223,6 +307,11 @@ main{
   .category {
     justify-content: start;
   }
+  #deals_of_the_day_offer {
+    display: none;
+  }
+
+
 }
 @media (max-width: 827px) {
   header {
@@ -245,7 +334,7 @@ main{
     display: none;
   }
 }
-@media (max-width: 467px) {
+@media (max-width: 487px) {
   .navbar_search {
     display: none;
   }
@@ -257,6 +346,11 @@ main{
   }
   .navbar_right button {
     padding: 0px 10px;
+  }
+}
+@media (max-width: 450px){
+  .timer{
+    display: none;
   }
 }
 @media (max-width: 350px) {
