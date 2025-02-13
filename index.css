@@ -124,6 +124,7 @@ header {
   font-size: 1rem;
   font-weight: 700;
 }
+
 .category {
   width: 100%;
   height: 8rem;
@@ -147,6 +148,7 @@ header {
   .navbar_right {
     nav-right: 45%;
   }
+
   .category {
     justify-content: start;
   }
