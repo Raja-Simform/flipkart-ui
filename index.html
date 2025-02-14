@@ -37,7 +37,7 @@
           />
           <img src="./assets/plus_text.svg" alt="plus text" loading="lazy" />
         </a>
-        <a href="#" class="navbar_search" role="button">
+        <a href="#" class="navbar_search" role="button" >
           <input
             type="text"
             placeholder="Search for products, brands and more"
@@ -55,17 +55,17 @@
        <!-- This is a right section of header section  -->
       <section class="navbar_right" aria-label="navbar right">
         <button title="Login">Login</button>
-        <a href="#" class="navbar_more" title="more" role="button">
-          <p>More</p>
+        <a href="#" class="navbar_more" title="more" role="button" aria-hidden="true" aria-labelledby="more">
+          <p id="more">More</p>
           <img
             src="./assets/arrow-down-svgrepo-com (1).svg"
             alt="more"
             loading="lazy"
           />
         </a>
-        <a href="#" class="navbar_cart" title="cart" role="button">
+        <a href="#" class="navbar_cart" title="cart" role="button" aria-hidden="true" aria-labelledby="cart">
           <img src="./assets/cart.svg" alt="cart" loading="lazy" />
-          <p>Cart</p>
+          <p id="cart">Cart</p>
         </a>
       </section>
     </header>
@@ -74,13 +74,13 @@
        <!-- This is a Product category section  -->
       <section class="category" aria-label="Category">
          <!-- It contains multiple anchor tag section having unique product -->
-        <a href="#" id="category_offer" role="button">
+        <a href="#" id="category_offer" role="button" aria-hidden="true" aria-labelledby="Top-Offer" >
           <img
             src="./assets/images/offer.svg"
             alt="Top Offers"
             loading="lazy"
           />
-          <p>Top Offers</p>
+          <p id="Top-Offer" >Top Offers</p>
         </a>
         <a href="#" role="button">
           <img
@@ -88,65 +88,65 @@
             alt="Grocery"
             loading="lazy"
           />
-          <div class="description">
-            <p>Category</p>
+          <div class="description" aria-hidden="true" aria-labelledby="category">
+            <p id="category">Category</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
           </div>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" aria-hidden="true" aria-labelledby="mobile">
           <img src="./assets/images/mobile.svg" alt="Mobiles" loading="lazy" />
-          <p>Mobiles</p>
+          <p id="mobile">Mobiles</p>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" >
           <img src="./assets/images/clothes.svg" alt="Fashion" loading="lazy" />
 
-          <div class="description">
-            <p>Fashion</p>
+          <div class="description" aria-hidden="true" aria-labelledby="fashion">
+            <p id="fashion">Fashion</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
           </div>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" >
           <img
             src="./assets/images/electronincs.svg"
             alt="Electronics"
             loading="lazy"
           />
-          <div class="description">
-            <p>Electronics</p>
+          <div class="description" aria-hidden="true" aria-labelledby="electronincs">
+            <p id="electronincs">Electronics</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
           </div>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" >
           <img src="./assets/images/furniture.svg" alt="Home" loading="lazy" />
-          <div class="description">
-            <p>Home</p>
+          <div class="description" aria-hidden="true" aria-labelledby="home">
+            <p id="home">Home</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
           </div>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" >
           <img
             src="./assets/images/electronincs.svg"
             alt="Appliances"
             loading="lazy"
           />
-          <div class="description">
-            <p>Appliances</p>
+          <div class="description" aria-hidden="true" aria-labelledby="Appliances">
+            <p id="Appliances">Appliances</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
           </div>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" aria-hidden="true" aria-labelledby="travel">
           <img src="./assets/images/travel.svg" alt="Travel" loading="lazy" />
-          <p>Travel</p>
+          <p id="travel">Travel</p>
         </a>
-        <a href="#" role="button">
+        <a href="#" role="button" >
           <img
             src="./assets/images/baby.svg"
             alt="Beauty, Toys & More"
             loading="lazy"
           />
 
-          <div class="description">
-            <p>Beauty, Toys & More</p>
+          <div class="description" aria-hidden="true" aria-labelledby="toy">
+            <p id="toy">Beauty, Toys & More</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
           </div>
         </a>
@@ -157,7 +157,7 @@
         <div class="deal">
           <div class="title">
             <div class="left_title book-title">
-              <p role="heading">Deals Of the day</p>
+              <p role="heading" >Deals Of the day</p>
               <div class="timer">
                 <img src="./assets/images/clock 1.svg" alt="clock" />
                 <p>22 : 07 : 36 Left</p>
@@ -292,7 +292,7 @@
                 />
               </div>
             </a>
-            <a href="#click" id="more_arrow">
+            <a href="#click" id="more_arrow" >
               <img src="./assets/arrow-right.svg" alt="More" loading="lazy" />
             </a>
           </div>
