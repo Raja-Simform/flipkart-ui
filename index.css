@@ -14,8 +14,8 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 header {
   height: 3.5rem;
@@ -29,6 +29,11 @@ header {
 main {
   background-color: var(--background-light-grey);
   height: calc(100vh - 3.5rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: auto;
 }
 .navbar_left {
   width: 70%;
@@ -134,12 +139,12 @@ main {
 .category {
   background-color: var(--backgorund-white);
   width: 100%;
-  height: 8rem;
+  min-height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  overflow: auto;
+  overflow-x: auto;
 }
 .category a {
   text-decoration: none;
@@ -147,6 +152,9 @@ main {
   text-align: center;
   vertical-align: middle;
   padding: 5px;
+}
+.category a p {
+  font-size: 14px;
 }
 .description {
   display: flex;
@@ -168,9 +176,8 @@ main {
 .category::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
-.cayegory {
+.category {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -214,7 +221,6 @@ main {
 .title a:hover {
   background-color: var(--backgound-grey);
 }
-
 .left_title {
   display: flex;
   gap: 1rem;
@@ -250,16 +256,12 @@ main {
   display: flex;
   flex-direction: rows;
   overflow: auto;
-  -ms-overflow-style: none; /* IE and Edge */
+  -ms-overflow-style: none;
   scrollbar-width: none;
-  border: 1px soild red;
 }
 .products::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-
 .products a {
   height: 100%;
   width: 14rem;
@@ -286,7 +288,6 @@ main {
   flex-direction: column;
   gap: 0.5rem;
 }
-
 #first-line {
   font-size: 0.9rem;
   font-weight: 600;
@@ -308,10 +309,12 @@ main {
 
 #deals_of_the_day_offer {
   width: 15rem;
+  height: 98%;
   background-color: var(--backgorund-white);
 }
 #deals_of_the_day_offer img {
   width: 15rem;
+  height: 100%;
 }
 #more_arrow {
   margin-top: 3rem;
@@ -335,7 +338,35 @@ main {
 #more_arrow:hover {
   box-shadow: 2px 2px 12px 6px var(--background-light-grey);
 }
-
+.books_music_instrument {
+  width: 85.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backgorund-white);
+  position: relative;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.book-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 2px;
+  gap: 4px;
+}
+#title_small {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--backgound-grey);
+}
+@media (max-width: 1420px) {
+  .books_music_instrument {
+    margin: 0px;
+    width: 100%;
+  }
+}
 @media (max-width: 1368px) {
   .navbar_left {
     width: 65%;
@@ -357,6 +388,9 @@ main {
   }
   #more_arrow {
     display: none;
+  }
+  .deal {
+    width: 100%;
   }
 }
 @media (min-width: 780px) {
@@ -389,9 +423,6 @@ main {
   #more_arrow {
     display: none;
   }
-  .Deals_of_the_day {
-    height: fit-content;
-  }
   .products {
     height: fit-content;
     width: 100%;
@@ -413,7 +444,6 @@ main {
     height: 4rem;
     width: 4rem;
   }
-
   .wrap {
     display: flex;
     flex-direction: column;
@@ -431,6 +461,9 @@ main {
     right: 4rem;
     top: 50%;
   }
+  .products a:hover {
+    scale: 1;
+  }
 }
 @media (max-width: 487px) {
   .navbar_search {
@@ -447,6 +480,9 @@ main {
   }
   #wrap_arrow {
     right: 2rem;
+  }
+  .book-title p {
+    font-size: 1rem;
   }
 }
 @media (max-width: 450px) {

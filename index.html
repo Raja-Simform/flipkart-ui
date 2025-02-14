@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Flipkart Skeleton UI - This Project is a single-page skeleton UI clone of flipkart's main page.">
+    <meta name="keywords" content="Flipkart, UI, Skeleton, Design">
+    <meta name="author" content="Raja Jha">
     <title>Online Shopping Site for</title>
+    <!-- Open graph meta taga -->
+    <meta property="og:title" content="Flipkart Skeleton UI">
+    <meta property="og:description" content="Flipkart Skeleton UI - This Project is a single-page skeleton UI clone of flipkart's main page.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/raja.jpeg">
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flipkart Skeleton UI">
+    <meta name="twitter:description" content="Flipkart Skeleton UI - This Project is a single-page skeleton UI clone of flipkart's main page.">
+    <meta name="twitter:image" content="./assets/images/raja.jpeg">
     <link
       rel="shortcut icon"
       href="./assets/flipkart_icon.svg"
@@ -11,9 +24,10 @@
     />
     <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
+    <!-- This is a Header Section  -->
     <header aria-label="header">
+       <!-- This is a left section of header section -->
       <section class="navbar_left" aria-label="navbar left">
         <a href="#" class="navbar_logo" title="Flipkart" role="button">
           <img
@@ -38,11 +52,16 @@
           />
         </a>
       </section>
+       <!-- This is a right section of header section  -->
       <section class="navbar_right" aria-label="navbar right">
         <button title="Login">Login</button>
         <a href="#" class="navbar_more" title="more" role="button">
           <p>More</p>
-          <img src="./assets/arrowdown.svg" alt="more" loading="lazy" />
+          <img
+            src="./assets/arrow-down-svgrepo-com (1).svg"
+            alt="more"
+            loading="lazy"
+          />
         </a>
         <a href="#" class="navbar_cart" title="cart" role="button">
           <img src="./assets/cart.svg" alt="cart" loading="lazy" />
@@ -50,8 +69,11 @@
         </a>
       </section>
     </header>
+     <!-- This is a Main section  -->
     <main>
+       <!-- This is a Product category section  -->
       <section class="category" aria-label="Category">
+         <!-- It contains multiple anchor tag section having unique product -->
         <a href="#" id="category_offer" role="button">
           <img
             src="./assets/images/offer.svg"
@@ -96,7 +118,6 @@
         </a>
         <a href="#" role="button">
           <img src="./assets/images/furniture.svg" alt="Home" loading="lazy" />
-
           <div class="description">
             <p>Home</p>
             <img src="./assets/arrowdown.svg" alt="arrowdown" />
@@ -130,11 +151,13 @@
           </div>
         </a>
       </section>
+      <!-- This is a Deals of the day section  -->
       <section class="Deals_of_the_day" aria-label="Deals of the day">
+         <!-- This is a  Deal conatiner conatining diffrent deal items -->
         <div class="deal">
           <div class="title">
-            <div class="left_title">
-              <p>Deals Of the day</p>
+            <div class="left_title book-title">
+              <p role="heading">Deals Of the day</p>
               <div class="timer">
                 <img src="./assets/images/clock 1.svg" alt="clock" />
                 <p>22 : 07 : 36 Left</p>
@@ -274,6 +297,7 @@
             </a>
           </div>
         </div>
+         <!-- This is a deal of the day alongside deal section  -->
         <a href="#" id="deals_of_the_day_offer" role="button"
           ><img
             src="./assets/images/highlight_product.png"
@@ -281,15 +305,112 @@
             loading="lazy"
         /></a>
       </section>
-      <section class="books_music_instrument">
-        <div class="books_music_instrument-title">
-          <div class="books_music_instrument-title-left">
-            <p></p>
-            <p></p>
+      <!-- This is a container section  for Books and Music section -->
+      <section class="section">
+        <!-- *This is a Books and Music section -->
+        <section class="books_music_instrument">
+          <!-- This section follow same pattern as deals of the day  -->
+          <div class="title">
+            <div class="left_title book-title">
+              <p role="heading">Books and music Instrument</p>
+              <p id="title_small">Shop now!</p>
+            </div>
+            <a href="#" role="button" id="view_all">VIEW ALL</a>
           </div>
-          <a href=""></a>
-        </div>
-        <div class="books_music_instrument-card"></div>
+          <div class="books_music_instrument-card"></div>
+          <div class="products">
+            <a href="#" role="button">
+              <img
+                src="./assets/images/harmonium.png"
+                alt="Harmoniums"
+                loading="lazy"
+              />
+              <div class="wrap">
+                <p id="first-line">Harmoniums</p>
+                <p id="second-line">Upto 60% off</p>
+                <p id="third-line">Shop Now</p>
+                <img
+                  src="./assets/arrow-right.svg"
+                  alt="More"
+                  loading="lazy"
+                  id="wrap_arrow"
+                />
+              </div>
+            </a>
+            <a href="#" role="button">
+              <img
+                src="./assets/images/flute.png"
+                alt="Flutes"
+                loading="lazy"
+              />
+              <div class="wrap">
+                <p id="first-line">Flutes</p>
+                <p id="second-line">Up to 80% off</p>
+                <p id="third-line">Shop Now!</p>
+                <img
+                  src="./assets/arrow-right.svg"
+                  alt="More"
+                  loading="lazy"
+                  id="wrap_arrow"
+                />
+              </div>
+            </a>
+            <a href="#" role="button">
+              <img
+                src="./assets/images/guitars1.png"
+                alt="Acoustic Guitars"
+                loading="lazy"
+              />
+              <div class="wrap">
+                <p id="first-line">Acoustic Guitar</p>
+                <p id="second-line">Starting ₹1799</p>
+                <p id="third-line">Juarez Revel.</p>
+                <img
+                  src="./assets/arrow-right.svg"
+                  alt="More"
+                  loading="lazy"
+                  id="wrap_arrow"
+                />
+              </div>
+            </a>
+            <a href="#" role="button">
+              <img
+                src="./assets/images/musical_accessories.png"
+                alt="Flutes"
+                loading="lazy"
+              />
+              <div class="wrap">
+                <p id="first-line">Musical Accessories</p>
+                <p id="second-line">Up to 80% off</p>
+                <p id="third-line">Shop Now!</p>
+                <img
+                  src="./assets/arrow-right.svg"
+                  alt="More"
+                  loading="lazy"
+                  id="wrap_arrow"
+                />
+              </div>
+            </a>
+            <a href="#" role="button">
+              <img
+                src="./assets/images/guitars2.png"
+                alt="Acoustic Guitars"
+                loading="lazy"
+              />
+              <div class="wrap">
+                <p id="first-line">Acoustic Guitars</p>
+                <p id="second-line">Stating ₹1999</p>
+                <p id="third-line">By Revel</p>
+                <img
+                  src="./assets/arrow-right.svg"
+                  alt="More"
+                  loading="lazy"
+                  id="wrap_arrow"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
       </section>
     </main>
   </body>
