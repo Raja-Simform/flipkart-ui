@@ -7,8 +7,10 @@
 :root {
   --navbar-background: #2874f0;
   --backgorund-white: white;
-  --backgound-grey: rgb(190, 181, 181);
+  --backgound-grey: rgb(153, 153, 153);
+  --background-light-grey: #f1f3f6;
   --text-balck: black;
+  --text-green: green;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
@@ -23,6 +25,10 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+main {
+  background-color: var(--background-light-grey);
+  height: calc(100vh - 3.5rem);
 }
 .navbar_left {
   width: 70%;
@@ -123,15 +129,17 @@ header {
   color: var(--backgorund-white);
   font-size: 1rem;
   font-weight: 700;
+  margin-right: 1rem;
 }
 .category {
+  background-color: var(--backgorund-white);
   width: 100%;
   height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  overflow: hidden;
+  overflow: auto;
 }
 .category a {
   text-decoration: none;
@@ -140,7 +148,195 @@ header {
   vertical-align: middle;
   padding: 5px;
 }
-@media (max-width: 1232px) {
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row;
+  height: fit-content;
+  width: 100%;
+}
+.description img {
+  height: 0.6rem;
+  width: 0.7rem;
+}
+.category a:hover p,
+.category a:hover {
+  color: var(--navbar-background);
+}
+.category::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cayegory {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.Deals_of_the_day {
+  background-color: var(--background-light-grey);
+  margin-top: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.deal {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backgorund-white);
+  position: relative;
+}
+.title {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  border-bottom: 0.5px solid var(--background-light-grey);
+}
+.title a {
+  height: 2rem;
+  width: 6rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbar-background);
+  color: var(--backgorund-white);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.title a:hover {
+  background-color: var(--backgound-grey);
+}
+
+.left_title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.left_title p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+#view_all {
+  margin-right: 10px;
+}
+.timer {
+  display: flex;
+  gap: 0.2rem;
+}
+.timer img {
+  height: 1rem;
+  width: 1rem;
+}
+.timer p {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var();
+}
+.timer img {
+  height: 1rem;
+  width: 1rem;
+}
+.products {
+  width: 100%;
+  display: flex;
+  flex-direction: rows;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  border: 1px soild red;
+}
+.products::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.products a {
+  height: 100%;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.products a img {
+  height: 12rem;
+  width: 10rem;
+}
+.products a:hover {
+  scale: 1.1;
+}
+.products a p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#first-line {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-balck);
+  text-align: center;
+}
+#second-line {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-green);
+  text-align: center;
+}
+#third-line {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--backgound-grey);
+  text-align: center;
+}
+
+#deals_of_the_day_offer {
+  width: 15rem;
+  background-color: var(--backgorund-white);
+}
+#deals_of_the_day_offer img {
+  width: 15rem;
+}
+#more_arrow {
+  margin-top: 3rem;
+  height: 5rem;
+  width: 2.5rem;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgorund-white);
+  box-shadow: 2px 2px 12px 4px var(--background-light-grey);
+  border-radius: 4px;
+}
+#more_arrow img {
+  height: 2rem;
+  width: 2rem;
+}
+#more_arrow:hover {
+  box-shadow: 2px 2px 12px 6px var(--background-light-grey);
+}
+
+@media (max-width: 1368px) {
   .navbar_left {
     width: 65%;
   }
@@ -149,6 +345,23 @@ header {
   }
   .category {
     justify-content: start;
+  }
+  #deals_of_the_day_offer {
+    display: none;
+  }
+  #hide {
+    display: none;
+  }
+  .deal {
+    overflow: hidden;
+  }
+  #more_arrow {
+    display: none;
+  }
+}
+@media (min-width: 780px) {
+  #wrap_arrow {
+    display: none;
   }
 }
 @media (max-width: 827px) {
@@ -172,7 +385,54 @@ header {
     display: none;
   }
 }
-@media (max-width: 467px) {
+@media (max-width: 780px) {
+  #more_arrow {
+    display: none;
+  }
+  .Deals_of_the_day {
+    height: fit-content;
+  }
+  .products {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .products a {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 30px;
+    border-bottom: 1px solid var(--backgound-grey);
+    position: relative;
+  }
+  .products a img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap p {
+    width: calc(100vw - 10rem);
+  }
+  #second-line {
+    display: none;
+  }
+  #wrap_arrow {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    right: 4rem;
+    top: 50%;
+  }
+}
+@media (max-width: 487px) {
   .navbar_search {
     display: none;
   }
@@ -184,6 +444,14 @@ header {
   }
   .navbar_right button {
     padding: 0px 10px;
+  }
+  #wrap_arrow {
+    right: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .timer {
+    display: none;
   }
 }
 @media (max-width: 350px) {
