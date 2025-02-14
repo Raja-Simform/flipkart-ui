@@ -33,9 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-
   overflow: auto;
-  /* overflow-x: hidden; */
 }
 .navbar_left {
   width: 70%;
@@ -178,7 +176,6 @@ main {
 .category::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .category {
   -ms-overflow-style: none; /* IE and Edge */
@@ -224,7 +221,6 @@ main {
 .title a:hover {
   background-color: var(--backgound-grey);
 }
-
 .left_title {
   display: flex;
   gap: 1rem;
@@ -260,16 +256,12 @@ main {
   display: flex;
   flex-direction: rows;
   overflow: auto;
-  -ms-overflow-style: none; /* IE and Edge */
+  -ms-overflow-style: none;
   scrollbar-width: none;
-  border: 1px soild red;
 }
 .products::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-
 .products a {
   height: 100%;
   width: 14rem;
@@ -296,7 +288,6 @@ main {
   flex-direction: column;
   gap: 0.5rem;
 }
-
 #first-line {
   font-size: 0.9rem;
   font-weight: 600;
@@ -370,7 +361,6 @@ main {
   font-weight: 400;
   color: var(--backgound-grey);
 }
-
 @media (max-width: 1420px) {
   .books_music_instrument {
     margin: 0px;
@@ -433,16 +423,6 @@ main {
   #more_arrow {
     display: none;
   }
-  /* main{
-    height:100%;
-    overflow-y: auto;
-  }
-  .Deals_of_the_day {
-    overflow-y: auto;
-  }
-  .books_music_instrument{
-    overflow-y: auto;
-  } */
   .products {
     height: fit-content;
     width: 100%;
@@ -464,7 +444,6 @@ main {
     height: 4rem;
     width: 4rem;
   }
-
   .wrap {
     display: flex;
     flex-direction: column;
@@ -482,8 +461,10 @@ main {
     right: 4rem;
     top: 50%;
   }
+  .products a:hover {
+    scale: 1;
+  }
 }
-
 @media (max-width: 487px) {
   .navbar_search {
     display: none;
