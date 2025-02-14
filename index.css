@@ -147,8 +147,31 @@ main {
   vertical-align: middle;
   padding: 5px;
 }
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row;
+  height: fit-content;
+  width: 100%;
+}
+.description img {
+  height: 0.6rem;
+  width: 0.7rem;
+}
+.category a:hover p,
 .category a:hover {
-  scale: 1.1;
+  color: var(--navbar-background);
+}
+.category::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cayegory {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .Deals_of_the_day {
   background-color: var(--background-light-grey);
