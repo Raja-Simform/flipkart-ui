@@ -3,16 +3,14 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  
-  
 }
 :root {
   --navbar-background: #2874f0;
   --backgorund-white: white;
   --backgound-grey: rgb(153, 153, 153);
-  --background-light-grey:rgb(241, 241, 241);
+  --background-light-grey:#f1f3f6;
   --text-balck: black;
-  --text-green:green;
+  --text-green: green;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
@@ -28,7 +26,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-main{
+main {
   background-color: var(--background-light-grey);
   height: calc(100vh - 3.5rem);
 }
@@ -140,7 +138,7 @@ main{
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  overflow: hidden;
+  overflow: auto;
 }
 .category a {
   text-decoration: none;
@@ -149,7 +147,7 @@ main{
   vertical-align: middle;
   padding: 5px;
 }
-.Deals_of_the_day{
+.Deals_of_the_day {
   background-color: var(--background-light-grey);
   height: 28rem;
   width: 100vw;
@@ -158,24 +156,24 @@ main{
   align-items: center;
   gap: 0.5rem;
 }
-.deal{
-  height:90%;
+.deal {
+  height: 90%;
   width: 70rem;
   display: flex;
   flex-direction: column;
   background-color: var(--backgorund-white);
   overflow: hidden;
 }
-.title{
+.title {
   height: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
-  align-items: center;  
+  align-items: center;
   border-bottom: 0.5px solid var(--background-light-grey);
 }
-.title a{
+.title a {
   height: 2rem;
   width: 6rem;
   text-decoration: none;
@@ -187,114 +185,111 @@ main{
   font-size: 0.9rem;
   font-weight: 500;
 }
-.title a:hover{
+.title a:hover {
   background-color: var(--backgound-grey);
 }
 
-.left_title{
+.left_title {
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
 }
-.left_title p{
+.left_title p {
   font-weight: bold;
   font-size: 1.3rem;
 }
-.timer{
+.timer {
   display: flex;
   gap: 0.2rem;
-  
 }
-.timer img{
-    height: 1rem;
-    width: 1rem;
+.timer img {
+  height: 1rem;
+  width: 1rem;
 }
-.timer p{
+.timer p {
   font-weight: 500;
   font-size: 0.9em;
   color: var();
 }
-.timer img{
+.timer img {
   height: 1rem;
   width: 1rem;
 }
-.products{
+.products {
   height: 18.4rem;
   width: 100%;
   display: flex;
-  
-  position: relative;
 
+  position: relative;
 }
-.products a{
+.products a {
   height: 100%;
-  width:14rem; 
+  width: 14rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   gap: 0.5rem;
   text-decoration: none;
 }
-.products a img{
+.products a img {
   height: 12rem;
   width: 10rem;
 }
-.products a p{
+.products a p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#first-line{
+#first-line {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-balck);
   text-align: center;
 }
-#second-line{
+#second-line {
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--text-green);
   text-align: center;
 }
-#third-line{
+#third-line {
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--backgound-grey);
   text-align: center;
 }
 
-#deals_of_the_day_offer{
+#deals_of_the_day_offer {
   height: 90%;
   width: 15rem;
   background-color: var(--backgorund-white);
 }
-#deals_of_the_day_offer img{
+#deals_of_the_day_offer img {
   height: 99.5%;
   width: 15rem;
-  
 }
-#more_arrow{
+#more_arrow {
   margin-top: 3rem;
   height: 5rem;
   width: 2.5rem;
   position: absolute;
-  right:0px;
+  right: 0px;
   top: 20%;
   padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--backgorund-white);
-  box-shadow: 2px 2px 12px 4px #dfdfdf;
+  box-shadow: 2px 2px 12px 4px var(--background-light-grey);
   border-radius: 4px;
 }
-#more_arrow img{
-   height: 2rem;
-   width: 2rem;
+#more_arrow img {
+  height: 2rem;
+  width: 2rem;
 }
-#more_arrow:hover{
-  box-shadow: 2px 2px 12px 6px #c7c6c6;
+#more_arrow:hover {
+  box-shadow: 2px 2px 12px 6px var(--background-light-grey);
 }
 
 @media (max-width: 1277px) {
@@ -310,8 +305,11 @@ main{
   #deals_of_the_day_offer {
     display: none;
   }
-
-
+}
+@media (min-width: 780px) {
+  #wrap_arrow {
+    display: none;
+  }
 }
 @media (max-width: 827px) {
   header {
@@ -334,6 +332,47 @@ main{
     display: none;
   }
 }
+@media (max-width: 780px) {
+  #more_arrow {
+    display: none;
+  }
+  .Deals_of_the_day {
+    height: fit-content;
+  }
+  .products {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .products a {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 30px;
+    border-bottom: 1px solid var(--backgound-grey);
+    position: relative;
+  }
+  .products a img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  #wrap_arrow {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    right: 1rem;
+    top: 50%;
+  }
+}
 @media (max-width: 487px) {
   .navbar_search {
     display: none;
@@ -348,8 +387,8 @@ main{
     padding: 0px 10px;
   }
 }
-@media (max-width: 450px){
-  .timer{
+@media (max-width: 450px) {
+  .timer {
     display: none;
   }
 }
